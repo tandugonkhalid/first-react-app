@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e202a;
+}
+
+.hero {
+  padding: 3rem 5rem 10rem 5rem !important;
+  color: white;
+  background-color: #1f212e;
+  border-radius: 0 0 50px 50px;
+}
+
+.hero .title-header p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+  color: #8b97c6;
+  font-weight: 700;
+}
+
+.hero .title-header h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.hero .checkbox span {
+  font-weight: 300;
+}
+
+.active {
+  padding: 3rem 5rem 10rem 5rem !important;
+  color: white;
+  background-color: #f5f7ff;
+  border-radius: 0 0 50px 50px;
+}
+
+.active .title-header p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+  color: #8b97c6;
+  font-weight: 700;
+}
+
+.active .title-header h1 {
+  color: black;
+  font-weight: 700;
+}
+
+.active .checkbox span {
+  color: black;
+  font-weight: 300;
+}
+
+.checkbox {
+  display: inline;
+}
+
+.checkbox span {
+  margin: 0 10px;
+}
+
+.checkbox .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+}
+
+.checkbox .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background-image: linear-gradient(to right, #378fe6, #3eda82);
+  border-radius: 20px;
+}
+
+.checkbox .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 2px;
+  background-color: #252a41;
+  border-radius: 50%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.checkbox .switch input:checked + .slider {
+  background-image: -webkit-gradient(linear, left top, right top, from(#aeb3cb), to(#aeb3cb));
+  background-image: linear-gradient(to right, #aeb3cb, #aeb3cb);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.checkbox .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.checkbox .switch input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e202a;
+}
+
+.social-media {
+  margin-top: -100px !important;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  background-color: #1f212e;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.card:hover {
+  background-color: #252a41;
+}
+
+.card-header {
+  height: 3px !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.facebook {
+  background-color: #198ff5;
+}
+
+.instagram {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.youtube {
+  background-color: #c4032a;
+}
+
+.card-body {
+  width: 15rem;
+  height: 13rem;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.card-body-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-body-top p {
+  margin: 0 10px !important;
+  font-size: 13px;
+  color: #8b97c6;
+}
+
+.card-body-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+}
+
+.card-body-middle h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.card-body-middle p {
+  color: #8b97c6;
+  letter-spacing: .5rem;
+  font-size: 10px;
+  margin: 0 !important;
+}
+
+.card-footer {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0.5rem 0 !important;
+}
+
+.card-footer p {
+  font-size: 12px;
+  color: #1db489;
+  margin: 0 0.5rem !important;
+}
+
+.decrease p {
+  color: #dc414c;
+}
+/*# sourceMappingURL=Socialmedia.css.map */

@@ -1,0 +1,92 @@
+@import '../App.scss';
+
+
+.social-media{
+    margin-top: -100px!important;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.card{
+    background-color: map-get($colors , dark-blue-topbg );
+    transition: .5s ease;
+}
+
+.card:hover{
+    background-color: map-get($colors , dark-desaturated-blue );
+}
+
+.card-header{
+    height: 3px!important;
+    padding: 0!important;
+    border: none!important;
+}
+
+.facebook{
+    background-color: map-get($colors , facebook );
+}
+
+.instagram{
+    background-image: map-get($colors , instagram );
+}
+
+.youtube{
+    background-color: map-get($colors , youtube );
+}
+
+.card-body{
+    width: 15rem;
+    height: 13rem;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.card-body-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        margin: 0 10px!important;
+        font-size: 13px;
+        color: map-get($colors , desaturated-blue );
+    }
+}
+
+.card-body-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+
+    h1{
+        color: map-get($colors , white );
+        font-weight: 700;
+        font-size: 4rem;
+    }
+
+    p{
+        color: map-get($colors , desaturated-blue );
+        letter-spacing: .5rem;
+        font-size: 10px;
+        margin: 0!important;
+    }
+}
+
+.card-footer{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 .5rem 0!important;
+
+    p{
+        font-size: 12px;
+        color: map-get($colors , lime-green );
+        margin: 0 .5rem!important;
+    }
+}
+
+.decrease p{
+    color: map-get($colors , bright-red );
+}

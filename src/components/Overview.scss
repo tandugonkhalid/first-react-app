@@ -1,0 +1,41 @@
+@import '../App.scss';
+
+.title{
+    color: map-get($colors , white );
+    margin-left: 2rem;
+}
+
+.overview{
+    padding: 3rem 1rem;
+}
+
+.overview > .container{
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+
+.card-overview{
+    height: 8rem;
+    color: map-get($colors , white );
+}
+
+.card-body-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+    span{
+        font-size: 10px;
+        color: map-get($colors , lime-green );
+
+        img{
+            height: 5px;
+            margin: .5rem;
+        }
+
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

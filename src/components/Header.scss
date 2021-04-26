@@ -1,0 +1,106 @@
+@import '../App.scss';
+
+.hero{
+    padding: 3rem 5rem 10rem 5rem!important;
+    color: map-get($colors , white );
+    background-color: map-get($colors , dark-blue-topbg );
+    border-radius: 0 0 50px 50px;
+
+    .title-header p{
+        width: fit-content;
+        margin-bottom: 0;
+        color: map-get($colors , desaturated-blue );
+        font-weight: 700;
+    }
+
+    .title-header h1{
+        color: map-get($colors , white );
+        font-weight: 700;
+    }
+
+    .checkbox span{
+        font-weight: 300;
+    }
+}
+
+.active{
+    padding: 3rem 5rem 10rem 5rem!important;
+    color: map-get($colors , white );
+    background-color: map-get($colors , pale-blue-top-bg );
+    border-radius: 0 0 50px 50px;
+
+    .title-header p{
+        width: fit-content;
+        margin-bottom: 0;
+        color: map-get($colors , desaturated-blue );
+        font-weight: 700;
+    }
+
+    .title-header h1{
+        color: black;
+        font-weight: 700;
+    }
+
+    .checkbox span{
+        color: black;
+        font-weight: 300;
+    }
+}
+
+.checkbox{
+    display: inline;
+
+    span{
+        margin: 0 10px;
+    }
+
+    .switch{
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 20px;
+
+        input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider{
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: map-get($colors , toggle-primary );
+            border-radius: 20px;
+        }
+
+        .slider:before{
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            left: 4px;
+            bottom: 2px;
+            background-color: map-get($colors , dark-desaturated-blue );
+            border-radius: 50%;
+            transition: .5s ease;
+        }
+
+        input:checked + .slider{
+            background-image: map-get($colors , toggle-light );
+            transition: .5s ease;
+        }
+
+        input:focus + .slider{
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked +.slider:before{
+            transform: translateX(18px);
+            transition: .5s ease;
+        }
+    }
+}
